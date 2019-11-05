@@ -1,5 +1,8 @@
+[Preview on github: bartimeus-accessibility.github.io/wcag/guidelines](https://bartimeus-accessibility.github.io/wcag/guidelines)
+
 # wcag21
-[WCAG 2.1](https://www.w3.org/TR/WCAG21/) extends [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/), which was published as a W3C Recommendation December 2008. Until WCAG 2.1 advances to W3C Recommendation the current and referenceable document is WCAG 2.0. 
+
+[WCAG 2.1](https://www.w3.org/TR/WCAG21/) extends [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/), which was published as a W3C Recommendation December 2008. Until WCAG 2.1 advances to W3C Recommendation the current and referenceable document is WCAG 2.0.
 
 This repository is used to develop the success criteria proposal for wcag 2.1, as well as associated understanding documents and techniques.
 
@@ -13,12 +16,12 @@ The WCAG 2.1 repository contains source and auxiliary files for WCAG 2.1, Unders
 * understanding/21/*.html - understanding files for each success criterion
 
 ## Review Links
- 
+
 Review links have been [put at the top of each issue](https://lists.w3.org/Archives/Public/w3c-wai-gl/2017JanMar/1200.html) tracking the success criterion proposal. The pattern for review links is:
 
 * SC for viewing: https://rawgit.com/w3c/wcag21/{branchname}/guidelines/sc/21/{scfile}.html
 * SC for editing: https://github.com/w3c/wcag21/blob/{branchname{/guidelines/sc/21/{scfile}.html
-* Term for viewing: https://rawgit.com/w3c/wcag21/{branchname}/guidelines/terms/21/{termfile}.html 
+* Term for viewing: https://rawgit.com/w3c/wcag21/{branchname}/guidelines/terms/21/{termfile}.html
 * Term for editing: https://github.com/w3c/wcag21/blob/{branchname{/guidelines/terms/21/{termfile}.html
 * SC in context of full guidelines: https://rawgit.com/w3c/wcag21/branchname/guidelines/#{scfile}
 
@@ -32,7 +35,7 @@ Review links have been [put at the top of each issue](https://lists.w3.org/Archi
 1. Find the appropriate file for the success criterion in the guidelines/sc/21 folder, named the same as the start of the branch name, and open in an HTML-capable editor. Do the same with any definitions referenced by the success criterion, in the guidelines/terms/21 folder.
 1. Open the guidelines/index.html file and remove comment marks around the lines that reference the success criterion and terms you have edited..
 1. Follow the [success criteria format](#user-content-success-criteria-format) below to create the SC content.
-1. Save the file and commit the change. NOTE: It is important to also add a suitable 'commit message'. In the comments, reference the issue number from which the proposal was developed starting with a hash, e.g., `#1`. 
+1. Save the file and commit the change. NOTE: It is important to also add a suitable 'commit message'. In the comments, reference the issue number from which the proposal was developed starting with a hash, e.g., `#1`.
 1. When the success criterion is ready for Working Group review, inform the chairs. Once the proposal has been accepted by the Working Group, the editors will merge the working branch into the master branch, which puts it in the editors' draft and eventual Technical Report publication.
 
 ### Success Criteria Format
@@ -102,7 +105,7 @@ The formal publication location for Understanding pages is https://www.w3.org/WA
 
 ## Editing Techniques
 
-Techniques are in the techniques folder, and grouped by technology into sub-folders. Each technique is a standalone file, which is in HTML format with a regular structure of elements, classes, and ids. Techniques previously published for WCAG 2.0 are currently have the assigned ID of the technique as the filename, but new techniques should use a filename that is derived from a shortened version of the technique title. 
+Techniques are in the techniques folder, and grouped by technology into sub-folders. Each technique is a standalone file, which is in HTML format with a regular structure of elements, classes, and ids. Techniques previously published for WCAG 2.0 are currently have the assigned ID of the technique as the filename, but new techniques should use a filename that is derived from a shortened version of the technique title.
 
 For example, a technique "Using the alt attribute on the img element to provide short text alternatives" might use "img-alt-short-text-alternatives.html" as the filename.
 
