@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
 
-        <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
+        <title>Richtlijnen voor de toegankelijkheid van Web content (WCAG) 2.1</title>
     	<script src="https://www.w3.org/Tools/respec/respec-w3c-common" class="remove"></script>
     	<script src="../biblio.js" class="remove"></script>
     	<script src="../script/wcag21.js" class="remove"></script>
@@ -13,23 +13,62 @@
     </head>
     <body>
         <section id="abstract">
-            <p>Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more accessible. Following these guidelines will make content more accessible to a wider range of people with disabilities, including accommodations for blindness and low vision, deafness and hearing loss, limited movement, speech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities and cognitive limitations; but will not address every user need for people with these disabilities. These guidelines address accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines will also often make Web content more usable to users in general.</p>
-        	<p>WCAG 2.1 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See <a href="http://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> for an introduction and links to WCAG technical and educational material.</p>
-            <p>WCAG 2.1 extends <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a> [[!WCAG20]], which was published as a W3C Recommendation December 2008. Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. The WG intends that for policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance. The publication of WCAG 2.1 does not deprecate or supersede WCAG 2.0. While WCAG 2.0 remains a W3C Recommendation, the W3C advises the use of WCAG 2.1 to maximize future applicability of accessibility efforts. The W3C also encourages use of the most current version of WCAG when developing or updating Web accessibility policies.</p>
-        </section>
-        <section id="sotd">
-            <p>To comment, <a href="https://github.com/w3c/wcag21/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG 2.1 GitHub repository</a>. Although the proposed Success Criteria in this document reference issues tracking discussion, the Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
-        </section>
-        <section class="informative introductory" id="intro">
-			<h2>Introduction</h2>
-			<section>
-				<h3>Background on WCAG 2</h3>
-				<p>Web Content Accessibility Guidelines (WCAG) 2.1 defines how to make Web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. Although these guidelines cover a wide range of issues, they are not able to address the needs of people with all types, degrees, and combinations of disability. These guidelines also make Web content more usable by older individuals with changing abilities due to aging and often improve usability for users in general.</p>
-				<p>WCAG 2.1 is developed through the <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/">W3C process</a> in cooperation with individuals and organizations around the world, with a goal of providing a shared standard for Web content accessibility that meets the needs of individuals, organizations, and governments internationally. WCAG 2.1 builds on WCAG 2.0 [[!WCAG20]], which in turn built on WCAG 1.0 [[WAI-WEBCONTENT]] and is designed to apply broadly to different Web technologies now and in the future, and to be testable with a combination of automated testing and human evaluation. For an introduction to WCAG, see the <a href="http://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a>.</p>
-                
-				<p>Significant challenges were encountered in defining additional criteria to address cognitive, language, and learning disabilities, including a short timeline for development as well as challenges in reaching consensus on testability, implementability, and international considerations of proposals. Work will carry on in this area in future versions of WCAG. We encourage authors to refer to our supplemental guidance on <a href="http://www.w3.org/WAI/standards-guidelines/wcag/#supplement">improving inclusion for people with disabilities, including learning and cognitive disabilities, people with low-vision, and more</a>.</p>
+            <p>Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.1 bevat een groot aantal aanbevelingen om webcontent toegankelijker te maken. Hoewel het volgen van deze richtlijnen content toegankelijker zal maken voor meer mensen met functiebeperkingen, waaronder blindheid en slechtziendheid, doofheid en gehoorverlies, leerproblemen, cognitieve beperkingen, motorische beperkingen, spraakproblemen, overgevoeligheid voor licht en combinaties daarvan, maar zal niet voorzien in elke gebruikersbehoefte van mensen met deze functiebeperkingen. Deze richtlijnen zijn van toepassing op de toegankelijkheid van webcontent op computers, laptops, tablets en mobiele apparaten. Het volgen van deze richtlijnen maakt webcontent doorgaans ook beter bruikbaar voor gebruikers in het algemeen.
 
-				<p>Web accessibility depends not only on accessible content but also on accessible Web browsers and other user agents. Authoring tools also have an important role in Web accessibility. For an overview of how these components of Web development and interaction work together, see:</p>
+
+            </p>
+
+            <p>Succescriteria van WCAG 2.1 zijn toetsbaar geformuleerd en zijn niet gebonden aan een technologie. Ondersteuning bij het voldoen aan de succescriteria in specifieke technologieën, alsmede algemene informatie omtrent de interpretatie van de succescriteria, levert het W3C in aparte documenten. 
+            Zie het <a href="http://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> voor een inleiding en links naar technisch en educatief WCAG-materiaal.
+            </p>
+
+            
+
+            
+            <p>Dit document, de Nederlandse vertaling van WCAG 2.1 is een uitbreiding van <a href="https://www.w3.org/TR/WCAG20/">Richtlijnen voor Toegankelijkheid van Webcontent 2.0</a> [WCAG20], de Nederlandse vertaling van Web Content Accessibility Guidelines (WCAG) 2.0 die als W3C Aanbeveling werd gepubliceerd in december 2008. 
+            De content die voldoet aan WCAG 2.1 voldoet ook aan WCAG 2.0. De WG (Werkgroep) wil dat voor beleidsmaatregelen die moeten conformeren aan WCAG 2.0, WCAG 2.1 een andere vorm van conformiteit kan bieden. De publicatie van WCAG 2.1 leidt niet tot de afschaffing of vervanging van WCAG 2.0. Hoewel WCAG 2.0 een W3C Aanbeveling blijft, beveelt het W3C het gebruik van WCAG 2.1 aan om toekomstige inspanning op het gebied van toegankelijkheid te maximaliseren. Het W3C moedigt daarnaast het gebruik van de meest recente versie van WCAG aan bij het ontwikkelen of bijwerken van beleidsmaatregelen met betrekking tot  webtoegankelijkheid.
+            </p>
+
+            
+
+
+        </section>
+
+
+        <section id="sotd">
+            <p>
+                
+                To comment, <a href="https://github.com/w3c/wcag21/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG 2.1 GitHub repository</a>. Although the proposed Success Criteria in this document reference issues tracking discussion, the Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). 
+            
+            </p>
+        </section>
+
+
+        <section class="informative introductory" id="intro">
+			<h2>Inleiding</h2>
+			<section>
+				<h3>Achtergrond van WCAG 2.1</h3>
+				<p>De Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.1 definiëren hoe je webcontent toegankelijker maakt voor mensen met een functiebeperking. Toegankelijkheid betreft een breed scala van functiebeperkingen, waaronder visuele, auditieve, fysieke, spraak-, cognitieve, taal-, leer- en neurologische functiebeperkingen. Hoewel deze richtlijnen een breed scala van aandachtspunten bestrijken, zijn ze niet in staat om in de behoeften van mensen met alle soorten, gradaties en combinaties van functiebeperkingen te voorzien. Deze richtlijnen maken webcontent ook beter bruikbaar voor ouderen, bij wie de vaardigheden door ouder worden veranderen, en verbeteren de bruikbaarheid voor gebruikers in het algemeen.
+
+
+                </p>
+                
+                <p>WCAG 2.1 is ontwikkeld door middel van het <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/">W3C process</a> in samenwerking met individuen en organisaties wereldwijd, met het doel om een gemeenschappelijke standaard voor toegankelijkheid van webcontent te leveren, die internationaal tegemoetkomt aan de behoeften van individuen, organisaties en overheden. WCAG 2.1 bouwt voort op WCAG 2.0 [WCAG20], die op zijn beurt voortbouwt op WCAG 1.0 [WAI-WEBCONTENT] en is ontworpen om breed van toepassing te zijn op verschillende webtechnologieën voor nu en in de toekomst en om testbaar te zijn met een combinatie van automatisch testen en menselijke evaluatie. Voor een inleiding tot WCAG, zie het <a href="http://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a>.
+                </p>
+
+                
+
+                
+                <p>Tijdens het definiëren van aanvullende criteria voor cognitieve, taal- en leerbeperkingen werden we geconfronteerd met aanzienlijke uitdagingen, waaronder een korte tijdlijn voor ontwikkeling en aanvullend het bereiken van consensus wat betreft testbaarheid, uitvoerbaarheid en internationale overwegingen van voorstellen. Werk op dit gebied zal voortgezet worden in toekomstige versies van WCAG. We moedigen auteurs aan om naar onze aanvullende documenten te verwijzen over <a href="http://www.w3.org/WAI/standards-guidelines/wcag/#supplement">het verbeteren van de inclusie voor mensen met functiebeperkingen, inclusief leerbeperkingen- en cognitieve beperkingen, slechtziendheid en andere</a>.
+                </p>
+
+                
+
+
+				<p>Webtoegankelijkheid hangt niet alleen af van de toegankelijkheid van content maar ook van de toegankelijkheid van webbrowsers en andere user agents. Authoring tools hebben ook een belangrijke rol in webtoegankelijkheid. Voor een overzicht van hoe deze componenten van webontwikkeling en -interactie samenwerken, zie:
+
+
+                </p>
 				<ul>
 					<li><strong><a href="https://www.w3.org/WAI/fundamentals/components/">Essential Components of Web Accessibility</a></strong></li>
 					<li><strong><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG) Overview</a></strong></li>
@@ -37,107 +76,150 @@
 				</ul>
 			</section>
 			<section>
-				<h3>WCAG 2 Layers of Guidance</h3>
-				<p>The individuals and organizations that use WCAG vary widely and include Web designers and developers, policy makers, purchasing agents, teachers, and students. In order to meet the varying needs of this audience, several layers of guidance are provided including overall <em>principles</em>, general <em>guidelines</em>, testable <em>success criteria</em> and a rich collection of <em>sufficient techniques</em>, <em>advisory techniques</em>, and <em>documented common failures</em> with examples, resource links and code.</p>
+				<h3>De gelaagde structuur van WCAG 2.1</h3>
+                <p>De personen en organisaties die WCAG gebruiken zijn sterk gevarieerd en omvatten webontwerpers, webontwikkelaars, beleidsmakers, inkopers, leraren en studenten. Om aan de verschillende behoeften van dit publiek te voldoen, worden verschillende lagen van advies geleverd, waaronder globale <em>principes</em>, algemene <em>richtlijnen</em>, toetsbare <em>succescriteria</em> en een uitgebreide verzameling <em>afdoende technieken</em>, <em>aanbevolen technieken</em> en <em>gedocumenteerde gangbare fouten</em> met voorbeelden, links naar hulpmiddelen en broncode.</p>
+
 				<ul>
 					<li>
-						<p><strong>Principles</strong> - At the top are four principles that provide the foundation for Web accessibility: <em>perceivable, operable, understandable, and robust</em>. See also <a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a>.</p>
-					</li>
+                        <p><strong>Principes</strong> - Bovenaan staan vier principes die het fundament voor webtoegankelijkheid leveren: <em>waarneembaar, bedienbaar, begrijpelijk en robuust</em>. 
+                            <a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a>.
+                        </p>
+                    </li>
+                    
 					<li>
-						<p><strong>Guidelines</strong> - Under the principles are guidelines. The 13 guidelines provide the basic goals that authors should work toward in order to make content more accessible to users with different disabilities. The guidelines are not testable, but provide the framework and overall objectives to help authors understand the success criteria and better implement the techniques.</p>
-					</li>
+                        <p><strong>Richtlijnen</strong> - Onder de principes vallen richtlijnen. De 13 richtlijnen vormen de hoofddoelen die auteurs moeten nastreven om content toegankelijker te maken voor gebruikers met verschillende functiebeperkingen. De richtlijnen zijn niet toetsbaar, maar leveren het kader en de algemene doelen om auteurs te helpen de succescriteria te begrijpen en de technieken beter te implementeren
+
+                        </p>
+                    </li>
+                    
 					<li>
-						<p><strong>Success Criteria</strong> - For each guideline, testable success criteria are provided to allow WCAG 2.0 to be used where requirements and conformance testing are necessary such as in design specification, purchasing, regulation, and contractual agreements. In order to meet the needs of different groups and different situations, three levels of conformance are defined: A (lowest), AA, and AAA (highest). Additional information on WCAG levels can be found in <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels">Understanding Levels of Conformance</a>.</p>
-					</li>
+                        <p><strong>Succescriteria</strong> - Elke richtlijn is voorzien van toetsbare succescriteria, zodat WCAG 2.0 gebruikt kan worden waar vereisten en toetsen op conformiteit noodzakelijk zijn, zoals bij het specificeren van het ontwerp, inkoop, regulering en contractuele overeenkomsten. Om aan de behoeften van verschillende groepen en verschillende situaties te voldoen, zijn drie niveaus van conformiteit gedefinieerd: A (laagst), AA en AAA (hoogst). 
+                        Aanvullende informatie over WCAG-niveaus is te vinden in <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels">Understanding Levels of Conformance</a>.    
+                        </p>
+                    </li>
+                    
 					<li>
-						<p><strong>Sufficient and Advisory Techniques</strong> - For each of the <em>guidelines</em> and <em>success criteria</em> in the WCAG 2.0 document itself, the working group has also documented a wide variety of <em>techniques</em>. The techniques are informative and fall into two categories: those that are <em>sufficient</em> for meeting the success criteria and those that are <em>advisory</em>. The advisory techniques go beyond what is required by the individual success criteria and allow authors to better address the guidelines. Some advisory techniques address accessibility barriers that are not covered by the testable success criteria. Where common failures are known, these are also documented. See also <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques">Sufficient and Advisory Techniques in Understanding WCAG 2.0</a>.</p>
+                        <p><strong>Afdoende en aanbevolen technieken</strong> - Voor elk van de <em>richtlijnen</em> en <em>succescriteria</em> in het WCAG 2.0 document zelf heeft de Werkgroep ook een breed scala van <em>technieken</em> gedocumenteerd. De technieken zijn informatief en vallen onder twee categorieën: zij die <em>afdoende</em> zijn om aan de succescriteria te voldoen en zij die <em>aanbevolen</em> zijn. De aanbevolen technieken gaan verder dan wat vanuit de individuele succescriteria wordt geëist en maken het auteurs mogelijk zich beter aan de richtlijnen te houden. Sommige aanbevolen technieken richten zich op toegankelijkheidsbarrières die niet afgedekt worden door de testbare succescriteria. Waar gangbare fouten bekend zijn, worden die ook gedocumenteerd. 
+                        Zie ook <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques">Sufficient and Advisory Techniques in Understanding WCAG 2.0</a>.
+                        </p>
 					</li>
 				</ul>
-				<p>All of these layers of guidance (principles, guidelines, success criteria, and sufficient and advisory techniques) work together to provide guidance on how to make content more accessible. Authors are encouraged to view and apply all layers that they are able to, including the advisory techniques, in order to best address the needs of the widest possible range of users.</p>
-				<p>Note that even content that conforms at the highest level (AAA) will not be accessible to individuals with all types, degrees, or combinations of disability, particularly in the cognitive language and learning areas. Authors are encouraged to consider the full range of techniques, including the advisory techniques, as well as to seek relevant advice about current best practice to ensure that Web content is accessible, as far as possible, to this community. <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">Metadata</a> may assist users in finding content most suitable for their needs. </p>
+                <p>De gelaagde adviezen (principes, richtlijnen, succescriteria en afdoende en aanbevolen technieken) leveren samen een compleet advies over het toegankelijk maken van content. Auteurs worden aangemoedigd om alle lagen te bekijken en toe te passen indien mogelijk, met inbegrip van de aanbevolen technieken, om zich optimaal te richten op de behoeften van een zo groot mogelijke groep gebruikers.
+
+                </p>
+                <p>Bedenk dat zelfs content die conformeert aan het hoogste niveau (AAA) niet toegankelijk zal zijn voor individuen met alle soorten, gradaties of combinaties van functiebeperkingen, in het bijzonder in de cognitieve gebieden van taal en leren. Auteurs worden aangemoedigd om het volledige scala van technieken, inclusief de aanbevolen technieken te overwegen, en ook om advies te vragen wat de huidige beste praktijk is om webcontent voor deze doelgroep zo toegankelijk mogelijk te maken. <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">Metadata</a> kan gebruikers wellicht helpen om content te vinden die het best aansluit bij hun behoeften.
+                </p>
 			</section>
 			<section>
-				<h3>WCAG 2.1 Supporting Documents</h3>
-				<p>The WCAG 2.0 document is designed to meet the needs of those who need a stable, referenceable technical standard. Other documents, called supporting documents, are based on the WCAG 2.0 document and address other important purposes, including the ability to be updated to describe how WCAG would be applied with new technologies. Supporting documents include: </p>
+				<h3>Documenten die WCAG 2.1 ondersteunen</h3>
+				<p>Het WCAG 2.0 document is ontworpen om tegemoet te komen aan de behoeften van degenen die een stabiele technische standaard nodig hebben waarnaar verwezen kan worden. Andere documenten, zogeheten ondersteunende documenten, zijn gebaseerd op het WCAG 2.0 document en richten zich op andere belangrijke doelen, inclusief de mogelijkheid om geüpdatet te worden zodat beschreven kan worden hoe WCAG bij nieuwe technologieën zou worden toegepast. Ondersteunende documenten bestaan uit:
+                </p>
 				<ol class="enumar">
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1</a></strong> - A customizable quick reference to WCAG 2.1 that includes all of the guidelines, success criteria, and techniques for authors to use as they are developing and evaluating Web content. This includes content from WCAG 2.0 and WCAG 2.1 and can be filtered in many ways to help authors focus on relevant content.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1</a></strong> - Een op maat aan te passen snelle verwijzing naar WCAG 2.1; deze omvat alle richtlijnen, succescriteria en technieken voor auteurs om te gebruiken als ze webcontent ontwikkelen en evalueren. Het omvat content uit WCAG 2.0 en WCAG 2.1 en er kunnen diverse filters worden ingesteld, zodat auteurs zich kunnen focussen op relevante content.
+                        </p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Understanding/">Understanding WCAG 2.1</a></strong> - A guide to understanding and implementing WCAG 2.1. There is a short "Understanding" document for each guideline and success criterion in WCAG 2.1 as well as key topics.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Understanding/">Understanding WCAG 2.1</a></strong> - Een gids om WCAG 2.1 te begrijpen en te implementeren. Er is een kort uitleg document voor elke Richtlijn en succescriterium in WCAG 2.1 evenals sleutel facetten.
+                        </p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a></strong> - A collection of techniques and common failures, each in a separate document that includes a description, examples, code and tests.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a></strong> - Een verzameling technieken en algemeen gangbare fouten, elk in een apart document dat een beschrijving, voorbeelden, codering en tests bevat.
+                        </p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG Documents</a></strong> - A diagram and description of how the technical documents are related and linked.</p>
+						<p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG Documents</a></strong> - Een diagram en beschrijving van hoe de technische documenten zich tot elkaar verhouden en verbonden zijn. 
+                        </p>
 					</li>
 				</ol>
-				<p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> for a description of the WCAG 2.0 supporting material, including education resources related to WCAG 2. Additional resources covering topics such as the business case for Web accessibility, planning implementation to improve the accessibility of Web sites, and accessibility policies are listed in <a href="http://www.w3.org/WAI/Resources/Overview">WAI Resources</a>.</p>
+                <p>Zie <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> voor een beschrijving van het WCAG 2.0 hulpmateriaal, waaronder leermateriaal gerelateerd aan WCAG 2. Aanvullende bronnen die onderwerpen behandelen zoals de businesscase voor webtoegankelijkheid, het plannen van de implementatie om de toegankelijkheid van websites te verbeteren en toegankelijkheidsbeleid, zijn te vinden in <a href="http://www.w3.org/WAI/Resources/Overview">WAI Resources</a>.
+                </p>
+                
+
 			</section>
         	<section>
-        		<h3>Requirements for WCAG 2.1</h3>
-                <p>WCAG 2.1 meets a set of <a href="https://w3c.github.io/wcag21/requirements/">requirements for WCAG 2.1</a> which, in turn, inherit requirements from WCAG 2.0. Requirements structure the overall framework of guidelines and ensure backwards compatibility. The Working Group also used a less formal set of acceptance criteria for success criteria, to help ensure success criteria are similar in style and quality to those in WCAG 2.0. These requirements constrained what could be included in WCAG 2.1. This constraint was important to preserve its nature as a dot-release of WCAG 2.</p>
+        		<h3>Eisen aan WCAG 2.1</h3>
+                <p> WCAG 2.1 voldoet aan een reeks <a href="https://w3c.github.io/wcag21/requirements/">eisen die aan WCAG 2.1 worden gesteld</a>. Deze eisen zijn op hun beurt afgeleid van WCAG 2.0. De gestelde eisen zorgen voor een goed gestructureerd kader voor de richtlijnen en garanderen achterwaartse compatibiliteit. De Werkgroep heeft ook minder formele acceptatiecriteria voor de succescriteria gebruikt, zodat de stijl en kwaliteit van de succescriteria overeenkomt met die van de criteria in WCAG 2.0. Deze eisen vormden een beperking voor wat kon worden opgenomen in WCAG 2.1. Deze beperking was belangrijk om de aard als dot-release van WCAG 2 te behouden.
+                </p>
+               
+
         	</section>
     		<section>
-                <h3>Comparison with WCAG 2.0</h3>
-                <p>WCAG 2.1 was initiated with the goal to improve accessibility guidance for three major groups: users with cognitive or learning disabilities, users with low vision, and users with disabilities on mobile devices. Many ways to meet these needs were proposed and evaluated, and a set of these were refined by the Working Group. Structural requirements inherited from WCAG 2.0, clarity and impact of proposals, and timeline led to the final set of success criteria included in this version. The Working Group considers that WCAG 2.1 incrementally advances web content accessibility guidance for all these areas, but underscores that not all user needs are met by these guidelines.</p>
+                <h3>Vergelijking met WCAG 2.0</h3>
+                <p>WCAG 2.1 werd ontwikkeld om te helpen om de toegankelijkheid te verbeteren voor drie belangrijke groepen: gebruikers met een leer- of cognitieve functiebeperking, slechtzienden en gebruikers met functiebeperkingen bij het gebruik van mobiele apparaten. Er werden veel voorstellen gedaan en geëvalueerd en de Werkgroep heeft uiteindelijk een aantal van deze voorstellen uitgewerkt. De definitieve succescriteria in deze versie zijn gebaseerd op de structurele eisen uit WCAG 2.0., de duidelijkheid en impact van de voorstellen en de tijdlijn. Volgens de Werkgroep zijn de richtlijnen voor toegankelijkheid van webcontent voor al deze gebieden in WCAG 2.1 aanzienlijk verbeterd, maar de Werkgroep benadrukt dat deze richtlijnen niet in alle behoeften van gebruikers kunnen voorzien.
+                </p>
 
-				<p>WCAG 2.1 builds on and is backwards compatible with WCAG 2.0, meaning web pages that conform to WCAG 2.1 also conform to WCAG 2.0. Authors that are required by policy to conform with WCAG 2.0 will be able to update content to WCAG 2.1 without losing conformance with WCAG 2.0. Authors following both sets of guidelines should be aware of the following differences:</p>
+				<p>WCAG 2.1. bouwt voort op en is achterwaarts compatibel met WCAG 2.0. Dit betekent dat webpagina's die conformeren aan WCAG 2.1 ook conformeren aan WCAG 2.0. Auteurs die in overeenstemming met het beleid moeten voldoen aan WCAG 2.0., kunnen content bijwerken conform WCAG 2.1 zonder dat dit ten koste gaat van de conformiteit met WCAG 2.0. Auteurs die beide richtlijnen volgen, moet rekening houden met de volgende verschillen:
+                </p>
 				<section>
-					<h4>New Features in WCAG 2.1</h4>
-					<p>WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions to support them, guidelines to organize the additions, and a couple additions to the conformance section. This additive approach helps to make it clear that sites which conform to WCAG 2.1 also conform to WCAG 2.0, thereby meeting conformance obligations that are specific to WCAG 2.0. The Accessibility Guidelines Working Group recommends that sites adopt WCAG 2.1 as their new conformance target, even if formal obligations mention WCAG 2.0, to provide improved accessibility and to anticipate future policy changes.</p>
-					<p>The following Success Criteria are new in WCAG 2.1:</p>
+					<h4>Nieuwe kenmerken in WCAG 2.1</h4>
+					<p>WCAG 2.1 bouwt voort op WCAG 2.0 met de toevoeging van nieuwe succescriteria en hun definities, richtlijnen om toevoegingen te structureren en een aantal toevoegingen aan de paragraaf Conformiteit. Deze aanpak met aanvullingen helpt om duidelijk te maken dat sites die conformeren aan WCAG 2.1 ook conformeren aan WCAG 2.0 en daarmee voldoen aan de specifieke conformiteitsverplichtingen van WCAG 2.0. 
+
+                    De Accessibility Guidelines Werkgroep beveelt aan dat sites WCAG 2.1 als nieuw conformiteitsniveau gebruiken, zelfs wanneer formele verplichtingen verwijzen naar WCAG 2.0, zodat zij een verbeterde toegankelijkheid kunnen bieden en kunnen inspelen op toekomstige veranderingen in de beleidsmaatregelen.
+                    </p>
+					<p>De volgende succescriteria zijn toegevoegd aan WCAG 2.1:</p>
 					<ul>
-						<li>1.3.4 <a href="#orientation">Orientation</a> (AA)</li>
-						<li>1.3.5 <a href="#identify-input-purpose">Identify Input Purpose</a> (AA)</li>
-						<li>1.3.6 <a href="#identify-purpose">Identify Purpose</a> (AAA)</li>
-						<li>1.4.10 <a href="#reflow">Reflow</a> (AA)</li>
-						<li>1.4.11 <a href="#non-text-contrast">Non-Text Contrast</a> (AA)</li>
-						<li>1.4.12 <a href="#text-spacing">Text Spacing</a> (AA)</li>
-						<li>1.4.13 <a href="#content-on-hover-or-focus">Content on Hover or Focus</a> (AA)</li>
-						<li>2.1.4 <a href="#character-key-shortcuts">Character Key Shortcuts</a> (A)</li>
-						<li>2.2.6 <a href="#timeouts">Timeouts</a> (AAA)</li>
-						<li>2.3.3 <a href="#animation-from-interactions">Animation from Interactions</a> (AAA)</li>
-						<li>2.5.1 <a href="#pointer-gestures">Pointer Gestures</a> (A)</li>
-						<li>2.5.2 <a href="#pointer-cancellation">Pointer Cancellation</a> (A)</li>
-						<li>2.5.3 <a href="#label-in-name">Label in Name</a> (A)</li>
-						<li>2.5.4 <a href="#motion-actuation">Motion Actuation</a> (A)</li>
-						<li>2.5.5 <a href="#target-size">Target Size</a> (AAA)</li>
-						<li>2.5.6 <a href="#concurrent-input-mechanisms">Concurrent Input Mechanisms</a> (AAA)</li>
-						<li>4.1.3 <a href="#status-messages">Status Messages</a> (AA)</li>
+						<li>1.3.4 <a href="#orientation">Oriëntatie</a> (AA)</li>
+						<li>1.3.5 <a href="#identify-input-purpose">Inputdoel Identificeren</a> (AA)</li>
+						<li>1.3.6 <a href="#identify-purpose">Doel Identificeren</a> (AAA)</li>
+						<li>1.4.10 <a href="#reflow">Dynamisch aanpassen</a> (AA)</li>
+						<li>1.4.11 <a href="#non-text-contrast">Niet-Tekstueel Contrast</a> (AA)</li>
+						<li>1.4.12 <a href="#text-spacing">Tekstafstand</a> (AA)</li>
+						<li>1.4.13 <a href="#content-on-hover-or-focus"> Content bij aanwijzen of focussen</a> (AA)</li>
+						<li>2.1.4 <a href="#character-key-shortcuts">Sneltoetsen tekentoets</a> (A)</li>
+						<li>2.2.6 <a href="#timeouts">Time-outs</a> (AAA)</li>
+						<li>2.3.3 <a href="#animation-from-interactions">Animatie uit interacties</a> (AAA)</li>
+						<li>2.5.1 <a href="#pointer-gestures">Bewegingen aanwijzer</a> (A)</li>
+						<li>2.5.2 <a href="#pointer-cancellation">Annulering aanwijzer</a> (A)</li>
+						<li>2.5.3 <a href="#label-in-name">Label in naam</a> (A)</li>
+						<li>2.5.4 <a href="#motion-actuation">Bewegingsactivering</a> (A)</li>
+						<li>2.5.5 <a href="#target-size">Doelgrootte</a> (AAA)</li>
+						<li>2.5.6 <a href="#concurrent-input-mechanisms">Gelijktijdige inputmechanismen</a> (AAA)</li>
+						<li>4.1.3 <a href="#status-messages">Statusberichten</a> (AA)</li>
 					</ul>
-					<p>Many of these success criteria reference new terms that have also been added to the glossary and form part of the normative requirements of the success criteria. </p>
-					<p>In the Conformance section, a third note about page variants has been added to <a href="#cc2">Full Pages</a>, and an option for machine-readable metadata added to <a href="#conformance-optional">Optional Components of a Conformance Claim</a>.</p>
+					<p>Veel van deze succescriteria bevatten nieuwe termen. Deze zijn aan de verklarende woordenlijst toegevoegd en maken onderdeel uit van de normatieve eisen van de succescriteria.
+                    </p>
+                    <p>In de paragraaf Conformiteit is een derde opmerking over paginavarianten toegevoegd aan <a href="#cc2">Volledige pagina's</a>. Daarnaast is een optie voor machine-leesbare metadata toegevoegd aan <a href="#conformance-optional">Optionele componenten van een aanspraak op conformiteit</a>.
+
+                    </p>
 				</section>
 				<section>
-					<h4>Numbering in WCAG 2.1</h4>
-					<p>In order to avoid confusion for implementers for whom backwards compatibility to WCAG 2.0 is important, new success criteria in WCAG 2.1 have been appended to the end of the set of success criteria within their guideline. This avoids the need to change the section number of success criteria from WCAG 2.0, which would be caused by inserting new success critera between existing success ccriteria in the guideline, but it means success criteria in each guideline are no longer grouped by conformance level. The order of success criteria within each guideline does not imply information about conformance level; only the conformance level indicator (A / AA / AAA) on the success criterion itself indicates this. The <a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG 2.1 Quick Reference</a> provides ways to view success criteria grouped by conformance level, along with many other filter and sort options.</p>
+					<h4>Nummering in WCAG 2.1</h4>
+                    <p>Om verwarring te voorkomen bij uitvoerders die veel waarde hechten aan achterwaartse compatibiliteit met WCAG 2.0, zijn de nieuwe succescriteria in WCAG 2.1 aan het einde van de reeks succescriteria in de richtlijnen toegevoegd. Hierdoor hoeft de paragraafnummering van de succescriteria in WCAG 2.0 niet te worden aangepast, hetgeen wel noodzakelijk zou zijn wanneer de nieuwe succescriteria tussen de bestaande succescriteria worden toegevoegd. Het gevolg is wel dat de succescriteria van elke richtlijn niet meer per conformiteitsniveau zijn gegroepeerd. De volgorde van de succescriteria van elke richtlijn geeft geen informatie over het conformiteitsniveau; dit kan alleen worden afgeleid uit de indicaties (A / AA / AAA) behorende bij het betreffende succescriterium. 
+                    De <a href="https://www.w3.org/WAI/WCAG21/quickref/">Snelle verwijzing naar WCAG 2.1</a> beschrijft manieren om succescriteria gegroepeerd per conformiteitsniveau te bekijken en geeft uitleg over andere filter- en sorteermogelijkheden
+                    </p>
+                    
+
 				</section>
 				<section>
-					<h4>Conformance to WCAG 2.1</h4>
-					<p>WCAG 2.1 uses the same conformance model as WCAG 2.0 with a couple additions, which is described in the <a href="#conformance">Conformance</a> section. It is intended that sites that conform to WCAG 2.1 also conform to WCAG 2.0, which means they meet the requirements of any policies that reference WCAG 2.0, while also better meeting the needs of users on the current Web. </p>
+					<h4>Conformiteit met WCAG 2.1</h4>
+                    <p>
+                    WCAG 2.1 gebruikt hetzelfde conformiteitsmodel als WCAG 2.0, maar met een aantal toevoegingen. Dit model is beschreven in de paragraaf <a href="#conformance">Conformiteit</a>. Het is de bedoeling dat sites die conformeren aan WCAG 2.1 ook conformeren aan WCAG 2.0. Dit betekent dat ze voldoen aan de eisen in alle beleidsmaatregelen die verwijzen naar WCAG 2.0, terwijl ook beter wordt voldaan aan de behoeften van gebruikers van de huidige website.
+                    </p>
 				</section>
 			</section>
         	<section>
-        		<h3>Later Versions of Accessibility Guidelines</h3>
-        		<p>In parallel with WCAG 2.1, the Accessibility Guidelines Working Group is developing another major version of accessibility guidelines. The result of this work is expected to be a more substantial restructuring of web accessibility guidance than would be realistic for dot-releases of WCAG 2. The work follows a research-focused, user-centered design methodology to produce the most effective and flexible outcome, including the roles of content authoring, user agent support, and authoring tool support. This is a multi-year effort, so WCAG 2.1 is needed as an interim measure to provide updated web accessibility guidance to reflect changes on the web since the publication of WCAG 2.0. The Working Group might also develop additional interim versions, continuing with WCAG 2.2, on a similar short timeline to provide additional support while the major version is completed. </p>
+        		<h3>Latere versies van de Richtlijnen voor Toegankelijkheid</h3>
+        		<p>Naast WCAG 2.1 ontwikkelt de Accessibility Guidelines Werkgroep een nieuwe hoofdversie van de richtlijnen voor toegankelijkheid. Het verwachte resultaat van dit werk is een meer substantiële herstructurering van toegankelijkheid richtlijnen dan realistisch zou zijn voor een dot-release van WCAG 2. Er wordt een op onderzoeksresultaten en gebruikers centraal gerichte ontwerpmethode gevolgd om de meest effectieve en flexibele resultaten te creëren, inclusief de rollen van content authoring, user agent support en authoring tool support. Omdat het gaat om een meerjarige inspanning, is WCAG 2.1 als voorlopige versie geïmplementeerd. WCAG 2.1 omvat bijgewerkte richtlijnen voor toegankelijkheid die rekening houden met de veranderingen die op het web hebben plaatsgevonden sinds de publicatie van WCAG 2.0. De Werkgroep kan eventueel op korte termijn ook nog meer interim versies maken, beginnend met WCAG 2.2, om extra ondersteuning te bieden terwijl de hoofdversie wordt voltooid.
+                </p>
         	</section>
         </section>
         <section class="principle" id="perceivable">
-            <h2> Perceivable </h2>
-            <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+            <h2> Waarneembaar </h2>
+            <p>Informatie en componenten van de gebruikersinterface moeten toonbaar zijn aan gebruikers op voor hen waarneembare wijze.
+            </p>
 
             <section class="guideline">
-                <h3>Text Alternatives</h3>
-                <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+                <h3>Tekstalternatieven</h3>
+                <p>Lever tekstalternatieven voor alle niet-tekstuele content, zodat die veranderd kan worden in andere vormen die mensen nodig hebben, zoals grote letters, braille, spraak, symbolen of eenvoudigere taal.
+                </p>
 
                 <section data-include="sc/20/non-text-content.html" data-include-replace="true"></section>
             </section>
 
             <section class="guideline">
-                <h3>Time-based Media</h3>
-                <p>Provide alternatives for time-based media.</p>
+                <h3>Op tijd gebaseerde media</h3>
+                <p>Lever alternatieven voor op tijd gebaseerde media.</p>
 
                 <section data-include="sc/20/audio-only-and-video-only-prerecorded.html" data-include-replace="true"></section>
 
@@ -159,8 +241,9 @@
             </section>
 
             <section class="guideline">
-                <h3>Adaptable</h3>
-                <p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+                <h3>Aanpasbaar</h3>
+                <p>Creëer content die op verschillende manieren gepresenteerd kan worden (bijvoorbeeld eenvoudiger lay-out) zonder verlies van informatie of structuur.
+                </p>
 
                 <section data-include="sc/20/info-and-relationships.html" data-include-replace="true"></section>
 
@@ -177,8 +260,9 @@
           </section>
 
             <section class="guideline">
-                <h3>Distinguishable</h3>
-                <p>Make it easier for users to see and hear content including separating foreground from background.</p>
+                <h3>Onderscheidbaar</h3>
+                <p>Maak het voor gebruikers gemakkelijker om content te horen en te zien, waaronder scheiding van voorgrond en achtergrond.
+                </p>
 
                 <section data-include="sc/20/use-of-color.html" data-include-replace="true"></section>
 
@@ -209,12 +293,12 @@
 
         </section>
         <section class="principle" id="operable">
-            <h2>Operable </h2>
-            <p>User interface components and navigation must be operable.</p>
+            <h2>Bedienbaar </h2>
+            <p>Componenten van de gebruikersinterface en navigatie moeten bedienbaar zijn.</p>
 
             <section class="guideline">
-                <h3>Keyboard Accessible</h3>
-                <p>Make all functionality available from a keyboard.</p>
+                <h3>Toetsenbordtoegankelijk</h3>
+                <p>Maak alle functionaliteit beschikbaar vanaf een toetsenbord.</p>
 
                 <section data-include="sc/20/keyboard.html" data-include-replace="true"></section>
 
@@ -227,8 +311,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Enough Time</h3>
-                <p>Provide users enough time to read and use content.</p>
+                <h3>Genoeg tijd</h3>
+                <p>Geef gebruikers genoeg tijd om content te lezen en te gebruiken.</p>
 
                 <section data-include="sc/20/timing-adjustable.html" data-include-replace="true"></section>
 
@@ -245,8 +329,9 @@
             </section>
 
             <section class="guideline new">
-                <h3>Seizures and Physical Reactions</h3>
-                <p>Do not design content in a way that is known to cause seizures or physical reactions.</p>
+                <h3>Toevallen en fysieke reacties</h3>
+                <p>Ontwerp content niet op een manier waarvan bekend is dat die toevallen of fysieke reacties veroorzaakt.
+                </p>
 
                 <section data-include="sc/20/three-flashes-or-below-threshold.html" data-include-replace="true"></section>
 
@@ -257,8 +342,9 @@
             </section>
 
             <section class="guideline">
-                <h3>Navigable</h3>
-                <p>Provide ways to help users navigate, find content, and determine where they are.</p>
+                <h3>Navigeerbaar</h3>
+                <p>Lever manieren om gebruikers te helpen navigeren, content te vinden en te bepalen waar ze zijn.
+                </p>
 
                 <section data-include="sc/20/bypass-blocks.html" data-include-replace="true"></section>
 
@@ -283,9 +369,10 @@
             </section>
 
             <section class="guideline new">
-                <h3>Input Modalities</h3>
+                <h3>Input Modaliteiten</h3>
                 <p class="change">New</p>
-                <p>Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+                <p>Maak het eenvoudiger voor gebruikers om de functionaliteit te bedienen met andere vormen van invoer dan alleen het toetsenbord.
+                </p>
 
                 <section data-include="sc/21/pointer-gestures.html" data-include-replace="true"></section>
 
@@ -303,12 +390,12 @@
 
         </section>
         <section class="principle" id="understandable">
-            <h2> Understandable </h2>
-            <p>Information and the operation of user interface must be understandable.</p>
+            <h2> Begrijpelijk </h2>
+            <p>Informatie en de bediening van de gebruikersinterface moeten begrijpelijk zijn.</p>
 
             <section class="guideline">
-                <h3>Readable</h3>
-                <p>Make text content readable and understandable.</p>
+                <h3>Leesbaar</h3>
+                <p>Maak tekstcontent leesbaar en begrijpelijk.</p>
 
                 <section data-include="sc/20/language-of-page.html" data-include-replace="true"></section>
 
@@ -325,8 +412,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Predictable</h3>
-                <p>Make Web pages appear and operate in predictable ways.</p>
+                <h3>Voorspelbaar</h3>
+                <p>Maak het uiterlijk en de bediening van webpagina's voorspelbaar.</p>
 
                 <section data-include="sc/20/on-focus.html" data-include-replace="true"></section>
 
@@ -341,8 +428,9 @@
             </section>
 
             <section class="guideline">
-                <h3>Input Assistance</h3>
-                <p>Help users avoid and correct mistakes.</p>
+                <h3>Assistentie bij invoer
+                </h3>
+                <p>Help gebruikers om fouten te vermijden en ze te verbeteren.</p>
 
                 <section data-include="sc/20/error-identification.html" data-include-replace="true"></section>
 
@@ -360,12 +448,14 @@
 
         </section>
         <section class="principle" id="robust">
-            <h2> Robust </h2>
-            <p>Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.</p>
+            <h2> Robuust </h2>
+            <p>Content moet voldoende robuust zijn om betrouwbaar geïnterpreteerd te kunnen worden door een breed scala van user agents, met inbegrip van hulptechnologieën.
+            </p>
 
             <section class="guideline">
-                <h3>Compatible</h3>
-                <p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
+                <h3>Compatibel</h3>
+                <p>Maximaliseer compatibiliteit met huidige en toekomstige user agents, met inbegrip van hulptechnologieën.
+                </p>
 
                 <section data-include="sc/20/parsing.html" data-include-replace="true"></section>
 
@@ -377,7 +467,7 @@
 
         </section>
         <section>
-            <h1>Conformance</h1>
+            <h1>Conformiteit</h1>
             <p>This section lists requirements for <a>conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility-supported ways of using technologies can be <a>relied upon</a> for conformance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
         	
         	<section>
