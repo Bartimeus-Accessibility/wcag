@@ -1,65 +1,92 @@
+
+
 <section id="input-purposes">
-	<h2>Input Purposes for User Interface Components</h2>
-	<p>This section contains a listing of common <a>user interface component</a> input purposes. The terms below are not keywords that must be used, but instead represent purposes that must be captured in the taxonomy adopted by a webpage. Where applicable, authors mark up controls with the chosen taxonomy to indicate the semantic purpose. This provides the potential for user agents and assistive technologies to apply personalized presentations that can enable more people to understand and use the content.</p>
+	<h2>Inputdoelen voor componenten van de gebruikersinterface</h2>
+	<p>Deze paragraaf omvat een lijst van de meest gebruikte inputdoelen van <a>componenten van de gebruikersinterface</a>. De onderstaande termen zijn niet de trefwoorden die moeten worden gebruikt. De termen beschrijven de doelen die moeten worden gevangen in de taxonomie van een webpagina. Indien van toepassing kunnen auteurs de bedieningselementen opmaken met de gekozen taxonomie om het semantisch doel aan te geven. Dit biedt de mogelijkheid aan user-agents en hulptechnologieën om gepersonaliseerde weergaven toe te passen, waardoor meer mensen de content kunnen begrijpen en gebruiken.
+	</p>
+	
+	
   
-  <p class="note">The list of input type purposes is based on the control purposes defined in the <a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2 Autofill field section</a>, but it is important to understand that a different technology may have some or all of the same concepts defined in its specification and only the concepts that are mapped to the meanings below are required.</p>
-	    
-  <p>The following input control purposes are intended to relate to the user of the content and pertain only to information related to that individual.</p>
+  <p class="note">
+	De lijst met typen inputdoelen is opgesteld op basis van de bedieningsdoelen die zijn gedefinieerd in <a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2 Autofill field paragraaf</a>. Het is belangrijk om te begrijpen dat een andere technologie mogelijk een aantal dezelfde of precies dezelfde concepten hanteert die zijn gedefinieerd in de specificatie en dat alleen de concepten behorende bij de betekenissen hieronder vereist zijn.</p>
+
+  <p>De volgende inputdoelen zijn gerelateerd aan de gebruiker van de content en hebben alleen betrekking op de informatie van de betreffende gebruiker.
+</p>
 
 	<ul>
-		<li><strong>name</strong> - Full name</li>
-		<li><strong>honorific-prefix</strong> - Prefix or title (e.g., "Mr.", "Ms.", "Dr.", "M<sup>lle</sup>")</li>
-		<li><strong>given-name</strong> - Given name (in some Western cultures, also known as the <i>first name</i>)</li>
-		<li><strong>additional-name</strong> - Additional names (in some Western cultures, also known as <i>middle names</i>, forenames other than the first name)</li>
-		<li><strong>family-name</strong> - Family name (in some Western cultures, also known as the <i>last name</i> or <i>surname</i>)</li>
-		<li><strong>honorific-suffix</strong> - Suffix (e.g., "Jr.", "B.Sc.", "MBASW", "II")</li>
-		<li><strong>nickname</strong> - Nickname, screen name, handle: a typically short name used instead of the full name</li>
-		<li><strong>organization-title</strong> - Job title (e.g., "Software Engineer", "Senior Vice President", "Deputy Managing Director")</li>
-		<li><strong>username</strong> - A username</li>
-		<li><strong>new-password</strong> - A new password (e.g., when creating an account or changing a password)</li>
-		<li><strong>current-password</strong> - The current password for the account identified by the <strong>username</strong> field (e.g., when logging in)</li>
-		<li><strong>organization</strong> - Company name corresponding to the person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>street-address</strong> - Street address (multiple lines, newlines preserved)</li>
-		<li><strong>address-line1</strong> - Street address (one line per field, line 1)</li>
-		<li><strong>address-line2</strong> - Street address (one line per field, line 2)</li>
-		<li><strong>address-line3</strong> - Street address (one line per field, line 3)</li>
-		<li><strong>address-level4</strong> - The most fine-grained administrative level, in addresses with four administrative levels</li>
-		<li><strong>address-level3</strong> - The third administrative level, in addresses with three or more administrative levels</li>
-		<li><strong>address-level2</strong> - The second administrative level, in addresses with two or more administrative levels; in the countries with two administrative levels, this would typically be the city, town, village, or other locality within which the relevant street address is found</li>
-		<li><strong>address-level1</strong> - The broadest administrative level in the address, i.e., the province within which the locality is found; for example, in the US, this would be the state; in Switzerland it would be the canton; in the UK, the post town</li>
-		<li><strong>country</strong> - Country code</li>
-		<li><strong>country-name</strong> - Country name</li>
-		<li><strong>postal-code</strong> - Postal code, post code, ZIP code, CEDEX code (if CEDEX, append "CEDEX", and the <i lang="fr">dissement</i>, if relevant, to the <strong>address-level2</strong> field)</li>
-		<li><strong>cc-name</strong> - Full name as given on the payment instrument</li>
-		<li><strong>cc-given-name</strong> - Given name as given on the payment instrument (in some Western cultures, also known as the <i>first name</i>)</li>
-		<li><strong>cc-additional-name</strong> - Additional names given on the payment instrument (in some Western cultures, also known as <i>middle names</i>, forenames other than the first name)</li>
-		<li><strong>cc-family-name</strong> - Family name given on the payment instrument (in some Western cultures, also known as the <i>last name</i> or <i>surname</i>)</li>
-		<li><strong>cc-number</strong> - Code identifying the payment instrument (e.g., the credit card number)</li>
-		<li><strong>cc-exp</strong> - Expiration date of the payment instrument</li>
-		<li><strong>cc-exp-month</strong> - Month component of the expiration date of the payment instrument</li>
-		<li><strong>cc-exp-year</strong> - Year component of the expiration date of the payment instrument</li>
-		<li><strong>cc-csc</strong> - Security code for the payment instrument (also known as the card security code (CSC), card validation code (CVC), card verification value (CVV), signature panel code (SPC), credit card ID (CCID), etc)</li>
-		<li><strong>cc-type</strong> - Type of payment instrument</li>
-		<li><strong>transaction-currency</strong> - The currency that the user would prefer the transaction to use</li>
-		<li><strong>transaction-amount</strong> - The amount that the user would like for the transaction (e.g., when entering a bid or sale price)</li>
-		<li><strong>language</strong> - Preferred language</li>
-		<li><strong>bday</strong> - Birthday</li>
-		<li><strong>bday-day</strong> - Day component of birthday</li>
-		<li><strong>bday-month</strong> - Month component of birthday</li>
-		<li><strong>bday-year</strong> - Year component of birthday</li>
-		<li><strong>sex</strong> - Gender identity (e.g., Female, Fa’afafine)</li>
-		<li><strong>url</strong> - Home page or other Web page corresponding to the company, person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>photo</strong> - Photograph, icon, or other image corresponding to the company, person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>tel</strong> - Full telephone number, including country code</li>
-		<li><strong>tel-country-code</strong> - Country code component of the telephone number</li>
-		<li><strong>tel-national</strong> - Telephone number without the county code component, with a country-internal prefix applied if applicable</li>
-		<li><strong>tel-area-code</strong> - Area code component of the telephone number, with a country-internal prefix applied if applicable</li>
-		<li><strong>tel-local</strong> - Telephone number without the country code and area code components</li>
-		<li><strong>tel-local-prefix</strong> - First part of the component of the telephone number that follows the area code, when that component is split into two components</li>
-		<li><strong>tel-local-suffix</strong> - Second part of the component of the telephone number that follows the area code, when that component is split into two components</li>
-		<li><strong>tel-extension</strong> - Telephone number internal extension code</li>
-		<li><strong>email</strong> - E-mail address</li>
-		<li><strong>impp</strong> - URL representing an instant messaging protocol endpoint (for example, "<strong>aim:goim?screenname=example</strong>" or "<strong>xmpp:fred@example.net</strong>")</li>
+		<li><strong>name</strong> - Volledige naam</li>
+		<li><strong>honorific-prefix</strong> - Voorvoegsel of titel (bijv. "Dhr.", "Mevr.", "Dr.", "M<sup>lle</sup>")</li>
+		
+		<li><strong>given-name</strong> - <i>Voornaam</i></li>
+		<li><strong>additional-name</strong> - Andere voornamen (in sommige westerse culturen worden deze ook wel <i>doopnamen</i> genoemd, andere namen dan de voornaam)</li>
+		
+
+		<li><strong>family-name</strong> - Familienaam (in sommige westerse culturen wordt deze ook wel <i>achternaam</i> genoemd)</li>
+		
+		<li><strong>honorific-suffix</strong> - Achtervoegsel (bijv., "Jr.", "B.Sc.", "MBASW", "II")</li>
+		<li><strong>nickname</strong> - Bijnaam, schermnaam, handle: een veelal korte naam die wordt gebruikt in plaats van de volledige naam</li>
+		<li><strong>organization-title</strong> - Functietitel (bijv., "Software Engineer", "Senior Vice President", "Deputy Managing Director")</li>
+		<li><strong>username</strong> - Een gebruikersnaam</li>
+		<li><strong>new-password</strong> - Een nieuw wachtwoord (bijv. bij het aanmaken van een account of het wijzigen van een wachtwoord)</li>
+		<li><strong>current-password</strong> - Het huidige wachtwoord voor de account die wordt geïdentificeerd door het veld <strong>username</strong> (bijv. bij het inloggen)</li>
+		
+		<li><strong>organization</strong> - Bedrijfsnaam die hoort bij de persoon, het adres of de contactgegevens in de andere velden die gerelateerd zijn aan dit veld
+		</li>
+		<li><strong>street-address</strong> - Adres (meerdere regels, nieuwe regels behouden)</li>
+		<li><strong>address-line1</strong> - Adres (één regel per veld, regel 1)</li>
+		<li><strong>address-line2</strong> - Adres (één regel per veld, regel 2)</li>
+		<li><strong>address-line3</strong> - Adres (één regel per veld, regel 3)</li>
+		<li><strong>address-level4</strong> - Het meest gedetailleerde administratieve niveau, bij adressen met vier administratieve niveaus</li>
+		<li><strong>address-level3</strong> - Het derde administratieve niveau, bij adressen met drie of meer administratieve niveaus</li>
+		<li><strong>address-level2</strong> - Het tweede administratieve niveau, bij adressen met twee of meer administratieve niveau; in landen met twee administratieve niveaus is dit gewoonlijk de gemeente, de stad, het dorp of de plaats waar het betreffende adres zich bevindt.
+		</li>
+		<li><strong>address-level1</strong> - Het minst gedetailleerde administratieve niveau, ofwel de provincie waar de plaats zich bevindt; in de Verenigde Staten is dit bijvoorbeeld de staat, in Zwitserland het kanton en in het Verenigd Koninkrijk de 'post town'
+		</li>
+		<li><strong>country</strong> - Landcode</li>
+		<li><strong>country-name</strong> - Naam van het land</li>
+		<li><strong>postal-code</strong> - Postal code, postcode, ZIP code, CEDEX-code (bij CEDEX, voeg "CEDEX" en het dissement toe, indien relevant, aan het veld <strong>address-level2</strong>)</li>
+		
+
+
+		<li><strong>cc-name</strong> - Volledige naam op het betaalmiddel</li>
+		<li><strong>cc-given-name</strong> - <i>Voornaam</i> op het betaalmiddel</li>
+		<li><strong>cc-additional-name</strong> - Andere voornamen op het betaalmiddel (in sommige westerse culturen worden deze ook wel <i>doopnamen</i> genoemd, andere namen dan de voornaam)</li>
+		
+
+		<li><strong>cc-family-name</strong> - Familienaam op het betaalmiddel (in sommige Westerse culturen wordt deze ook wel <i>achternaam</i> genoemd)</li>
+		
+
+		<li><strong>cc-number</strong> - Identificatiecode op het betaalmiddel (bijv. het creditcardnummer)</li>
+		<li><strong>cc-exp</strong> - Vervaldatum van het betaalmiddel</li>
+		<li><strong>cc-exp-month</strong> - Maand van de vervaldatum van het betaalmiddel</li>
+		<li><strong>cc-exp-year</strong> - Jaar van de vervaldatum van het betaalmiddel</li>
+		<li><strong>cc-csc</strong> - Beveiligingscode van het betaalmiddel (ook wel Card Security Code (CSC), Card Validation Code (CVC), Card Verification Value (CVV), Signature Panel Code (SPC), Credit Card ID (CCID) genoemd)</li>
+		<li><strong>cc-type</strong> - Type betaalmiddel</li>
+		<li><strong>transaction-currency</strong> - De valuta waarin de gebruiker de transactie wil uitvoeren</li>
+		<li><strong>transaction-amount</strong> - De hoeveelheid die de gebruiker voor de transactie wil uitgeven (bijv. bij het invoeren van een bod of verkoopprijs)</li>
+		<li><strong>language</strong> - Voorkeurstaal</li>
+		<li><strong>bday</strong> - Geboortedatum</li>
+		<li><strong>bday-day</strong> - Geboortedag</li>
+		<li><strong>bday-month</strong> - Geboortemaand</li>
+		<li><strong>bday-year</strong> - Geboortejaar</li>
+		<li><strong>sex</strong> - Geslacht (bijv., Vrouwelijk, Fa’afafine)</li>
+		<li><strong>url</strong> - Startpagina of ander webpagina die hoort bij het bedrijf, de persoon, het adres of de contactgegevens in de andere velden die gerelateerd zijn aan dit veld
+		</li>
+		<li><strong>photo</strong> - Foto, pictogram of andere afbeelding die hoort bij het bedrijf, de persoon, het adres of de contactgegevens in de andere velden die gerelateerd zijn aan dit veld</li>
+		<li><strong>tel</strong> - Volledig telefoonnummer, inclusief landcode</li>
+		<li><strong>tel-country-code</strong> - Landcode van het telefoonnummer</li>
+		<li><strong>tel-national</strong> - Telefoonnummer zonder de landcode, met een binnenlands landspecifiek voorvoegsel indien van toepassing</li>
+		<li><strong>tel-area-code</strong> - Netnummer van het telefoonnummer, met een binnenlands landspecifiek voorvoegsel indien van toepassing</li>
+		<li><strong>tel-local</strong> - Telefoonnummer zonder de landcode en het netnummer</li>
+		<li><strong>tel-local-prefix</strong> - Eerste deel van het gedeelte van het telefoonnummer dat volgt op het netnummer wanneer dat gedeelte is opgedeeld in twee delen</li>
+		<li><strong>tel-local-suffix</strong> - Tweede deel van het gedeelte van het telefoonnummer dat volgt op het netnummer wanneer dat gedeelte is opgedeeld in twee delen</li>
+		<li><strong>tel-extension</strong> - Intern toestelnummer behorende bij een telefoonnummer</li>
+		<li><strong>email</strong> - E-mailadres</li>
+		<li><strong>impp</strong> - URL die het eindpunt van een instant messaging protocol vertegenwoordigt (bijvoorbeeld: "<strong>aim:goim?screenname=example</strong>" of "<strong>xmpp:fred@example.net</strong>")</li>
+
+		
+
+
 	</ul>
 	
 </section>

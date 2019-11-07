@@ -468,138 +468,224 @@
         </section>
         <section>
             <h1>Conformiteit</h1>
-            <p>This section lists requirements for <a>conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility-supported ways of using technologies can be <a>relied upon</a> for conformance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
+            <p>Deze paragraaf geeft een lijst van eisen voor <a>conformiteit</a> aan WCAG 2.1. Ze geeft ook informatie over hoe men aanspraken op conformiteit kan maken. Aanspraken op conformiteit zijn optioneel. 
+            Ten slotte beschrijft deze paragraaf wat het betekent om door <a>toegankelijkheid ondersteund</a> te zijn, aangezien voor conformiteit alleen <a>gesteund kan worden op</a> het gebruik van technologieën voor toegankelijkheid ondersteunde manieren.
+            <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> geeft verdere uitleg van het begrip door toegankelijkheid ondersteund.
+            </p>
+
+            
+
         	
         	<section>
-        		<h2>Interpreting Normative Requirements</h2>
+        		<h2>Normatieve eisen interpreteren</h2>
         		
-        		<p>The main content of WCAG 2.1 is <a>normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
-        		<p>The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [[RFC2119]].</p>
+                <p>De belangrijkste inhoud van WCAG 2.1 is <a>normatief</a> en definieert de eisen die gevolgen hebben voor aanspraken op conformiteit. Inleidend materiaal, bijlagen, paragrafen die zijn gemarkeerd als "niet-normatief", schema's, voorbeelden en opmerkingen zijn <a>informatief</a> (niet-normatief). Niet-normatief materiaal geeft advies en informatie over het interpreteren van de richtlijnen, maar schrijft geen eisen voor die gevolgen hebben voor een aanspraak op conformiteit.
+                </p>
+                
+        		<p>De belangrijke woorden MOGEN, MOETEN, MOETEN NIET, NIET AANBEVOLEN, AANBEVOLEN, ZOUDEN MOETEN en ZOUDEN NIET MOETEN, moeten worden geïnterpreteerd zoals beschreven in [RFC2119].
+                </p>
         	</section>
 
             <section id="conformance-reqs">
-                <h2>Conformance Requirements</h2>
-                <p>In order for a Web page to conform to WCAG 2.1, all of the following conformance requirements must be satisfied:</p>
+                <h2>Conformiteitseisen</h2>
+                <p>Een webpagina is conform WCAG 2.1 als deze aan alle volgende conformiteitseisen voldoet:
+                </p>
 
                 <section id="cc1">
-                    <h3>Conformance Level</h3>
-                    <p>One of the following levels of conformance is met in full.</p>
+                    <h3>Conformiteitsniveau</h3>
+                    <p>Aan een van de volgende conformiteitsniveaus wordt volledig voldaan:</p>
                     <ul>
-                        <li>For Level A conformance (the minimum level of conformance), the <a>Web page</a>
-                            <a>satisfies</a> all the Level A Success Criteria, or a <a>conforming alternate version</a> is provided.</li>
-                        <li>For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
-                        <li>For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
+                        <li>Voor conformiteit van Niveau A (het minimumniveau van conformiteit) <a>voldoet</a> de <a>webpagina</a> aan alle succescriteria van Niveau A , of er is een <a>conforme alternatieve</a> versie beschikbaar.
+                        </li>
+                        
+
+                        <li>Voor conformiteit van Niveau AA voldoet de webpagina aan alle succescriteria van Niveau A en Niveau AA of er is een conforme alternatieve versie van Niveau AA beschikbaar.
+                        </li>
+
+                        <li>Voor conformiteit van Niveau AAA voldoet de webpagina aan alle succescriteria van Niveau A, Niveau AA en Niveau AAA of er is een conforme alternatieve versie van Niveau AAA beschikbaar.
+                        </li>
                     </ul>
-                    <p class="note">Although conformance can only be achieved at the stated levels, authors are encouraged to report (in their claim) any progress toward meeting success criteria from all levels beyond the achieved level of conformance.</p>
-                    <p class="note">It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content.</p>
+                    <p class="note">Hoewel conformiteit alleen op de vermelde niveaus kan worden bereikt, worden auteurs aangemoedigd om (in hun aanspraak) te rapporteren welke vooruitgang ze boeken bij het voldoen aan succescriteria van alle niveaus hoger dan het bereikte niveau van conformiteit.
+                    </p>
+                    <p class="note">Het is niet aan te bevelen om beleidsmatig conformiteit op Niveau AAA te eisen voor hele sites, omdat het voor sommige content niet mogelijk is om aan alle succescriteria van Niveau AAA te voldoen.
+                    </p>
                 </section>
 
                 <section id="cc2">
-                    <h3>Full pages</h3>
-                    <p><a>Conformance</a> (and conformance level) is for full <a>Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.</p>
-                    <p class="note">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.</p>
-                    <p class="note">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p>
-                  <p class="note new"><span class="change">New</span> A full page includes each variation of the page that is automatically presented by the page for various screen sizes (e.g. variations in a responsive Web page). Each of these variations needs to conform (or needs to have a conforming alternate version) in order for the entire page to conform.</p>
+                    <h3>Volledige pagina's</h3>
+                    <p><a>Conformiteit</a> (en conformiteitsniveau) is slechts voor volledige <a>webpagina(s)</a> en kan niet worden bereikt als een deel van de webpagina wordt uitgesloten.
+                    </p>
+                    
+
+                    
+                    <p class="note">Om de conformiteit te bepalen, worden alternatieven voor een deel van de content van de pagina beschouwd als deel van de pagina als de alternatieven direct uit de pagina verkregen kunnen worden, bijvoorbeeld een lange beschrijving of een alternatieve weergave van een video.
+
+                    </p>
+
+                    <p class="note">Auteurs van webpagina's, die niet kunnen conformeren omdat ze te maken hebben met content waar zij geen zeggenschap over hebben, kunnen een v<a href="#conformance-partial">verklaring van partiële conformiteit</a> overwegen.
+
+                    </p>
+                    
+
+                  <p class="note new"><span class="change">New</span> Een volledige pagina omvat elke variant van die pagina die automatisch door de pagina wordt weergegeven voor verschillende schermgroottes (bijvoorbeeld varianten van een responsieve webpagina). Voor conformiteit van de gehele pagina, moeten alle varianten van de pagina conformeren (of er moet een alternatieve versie beschikbaar zijn die conformeert).
+                </p>
+
+                
                 </section>
 
                 <section id="cc3">
-                    <h3>Complete processes</h3>
-                    <p>When a <a>Web page</a> is one of a series of Web pages presenting a <a>process</a> (i.e., a sequence of steps that need to be completed in order to accomplish an activity), all Web pages in the process conform at the specified level or better. (Conformance is not possible at a particular level if any page in the process does not conform at that level or better.)</p>
-                    <p class="example">An online store has a series of pages that are used to select and purchase products. All pages in the series from start to finish (checkout) conform in order for any page that is part of the process to conform.</p>
+                    <h3>Volledige processen</h3>
+                    <p>Als een <a>webpagina</a> één is uit een serie van webpagina's die een <a>proces</a> vormen (d.w.z. een rij stappen die voltooid moet worden om een activiteit tot stand te brengen), conformeren alle webpagina's in het proces aan het gespecificeerde niveau of beter. (Conformiteit is niet mogelijk op een bepaald niveau als om het even welke pagina in het proces niet aan dat niveau of beter conformeert.)
+
+                    </p>
+                    
+                    <p class="example">Een online warenhuis heeft een serie pagina's die gebruikt worden om producten te selecteren en te kopen. Alle pagina's in de serie van begin tot eind (kassa) conformeren om elke willekeurige pagina die deel van het proces is te laten conformeren.
+
+                    </p>
                 </section>
 
                 <section id="cc4">
-                    <h3>Only Accessibility-Supported Ways of Using Technologies</h3>
-                    <p>Only <a>accessibility-supported</a> ways of using <a>technologies</a> are <a>relied upon</a> to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is accessibility supported. (See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding accessibility support</a>.)</p>
+                    <h3>Louter door toegankelijkheid ondersteunde manieren om technologieën te gebruiken</h3>
+                    <p>
+                        Om te voldoen aan succescriteria wordt <a>gesteund op</a> de beschikbaarheid van louter door <a>toegankelijkheid ondersteunde</a> manieren om <a>technologieën</a> te gebruiken. Elke informatie of functionaliteit die geleverd wordt op een manier die niet door toegankelijkheid ondersteund wordt, is ook beschikbaar op een manier die door toegankelijkheid ondersteund is. (Zie <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding accessibility support</a>.)
+
+                    </p>
                 </section>
 
                 <section id="cc5">
-                    <h3>Non-Interference</h3>
-                    <p>If <a> technologies </a> are used in a way that is not <a>accessibility supported</a>, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the <a>Web page</a> as a whole continues to meet the conformance requirements under each of the following conditions:</p>
+                    <h3>Niet-interferentie</h3>
+                    <p>Als <a>technologieën</a> gebruikt worden op een manier die niet door <a>toegankelijkheid ondersteund</a> wordt of als ze gebruikt worden op een niet-conforme manier, dan blokkeren ze niet het vermogen van de gebruiker om de rest van de pagina te bereiken. Bovendien blijft de <a>webpagina</a> als geheel voldoen aan de conformiteitseisen onder elk van de volgende voorwaarden:
+ 
+                    </p>
                     <ol>
-                        <li>when any technology that is not <a>relied upon</a> is turned on in a user agent,</li>
-                        <li>when any technology that is not relied upon is turned off in a user agent, and</li>
-                        <li>when any technology that is not relied upon is not supported by a user agent</li>
+                        <li>als om het even welke technologie waarop niet <a>gesteund wordt</a>, is aangezet in een user agent,</li>
+                        
+
+                        <li>als om het even welke technologie waarop niet gesteund wordt, is uitgezet in een user agent,
+                        </li>
+                        <li>als om het even welke technologie waarop niet gesteund wordt, niet ondersteund wordt door een user agent</li>
                     </ol>
-                    <p>In addition, the following success criteria apply to all content on the page, including content that is not otherwise relied upon to meet conformance, because failure to meet them could interfere with any use of the page:</p>
+                    <p>Verder zijn de volgende succescriteria van toepassing op alle content op de pagina, met inbegrip van content waarop niet op een andere manier gesteund wordt om te voldoen aan conformiteit, omdat content die niet aan deze criteria voldoet elk gebruik van de pagina kan belemmeren:
+                    </p>
                     <ul>
-                        <li><strong>1.4.2 - Audio Control</strong>,</li>
-                        <li><strong>2.1.2 - No Keyboard Trap</strong>,</li>
-                        <li><strong>2.3.1 - Three Flashes or Below Threshold</strong>, and</li>
-                        <li><strong>2.2.2 - Pause, Stop, Hide</strong>.</li>
+                        <li><strong>1.4.2 - Geluidsbediening</strong>,</li>
+                        <li><strong>2.1.2 - Geen toetsenbordval</strong>,</li>
+                        <li><strong>2.3.1 - Drie flitsen of beneden drempelwaarde</strong>, en</li>
+                        <li><strong>2.2.2 - Pauzeren, stoppen, verbergen</strong>.</li>
                     </ul>
-                    <p class="note">If a page cannot conform (for example, a conformance test page or an example page), it cannot be included in the scope of conformance or in a conformance claim.</p>
-                    <p>For more information, including examples, see <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Requirements</a>.</p>
+                    <p class="note">als een pagina niet kan conformeren (bijvoorbeeld, een conformiteitstest pagina of een voorbeeldpagina), kan ze niet worden meegenomen binnen de scope van de conformiteit of in een aanspraak op conformiteit.</p>
+                    <p>Voor meer informatie, inclusief voorbeelden zie <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Requirements</a>.
+                    </p>
+                    
+
+
                 </section>
             </section>
 
             <section id="conformance-claims">
-                <h2>Conformance Claims (Optional) </h2>
-                <p>Conformance is defined only for <a>Web pages</a>. However, a conformance claim may be made to cover one page, a series of pages, or multiple related Web pages.</p>
+                <h2>Aanspraken op conformiteit (optioneel) </h2>
+                <p>Conformiteit is alleen gedefinieerd voor <a>webpagina's</a>. Er kan evenwel een aanspraak op conformiteit gemaakt worden voor één pagina, voor een serie pagina's of voor meerdere verwante webpagina's.</p>
+                
 
                 <section id="conformance-required">
-                    <h3>Required Components of a Conformance Claim</h3>
-                    <p>Conformance claims are <strong>not required</strong>. Authors can conform to WCAG 2.1 without making a claim. However, if a conformance claim is made, then the conformance claim <strong>must</strong> include the following information:</p>
+                    <h3>Vereiste componenten van een aanspraak op conformiteit</h3>
+                    <p>Aanspraken op conformiteit worden <strong>niet geëist</strong>. Auteurs kunnen conformeren aan WCAG 2.1 zonder hierop aanspraak te maken. Als evenwel een aanspraak op conformiteit gemaakt wordt, dan <strong>moet</strong> de aanspraak op conformiteit de volgende informatie bevatten:
+                    </p>
+                    
                     <ol>
-                        <li><strong>Date</strong> of the claim</li>
-                        <li><strong>Guidelines title, version and URI </strong> "Web Content Accessibility Guidelines 2.1 at <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>" <span class="ednote">In WCAG 2.0 this was a dated URI, which may need to be adjusted when this becomes a Rec.</span></li>
-                        <li><strong>Conformance level</strong> satisfied: (Level A, AA or AAA)</li>
-                        <li>
-                            <p><strong>A concise description of the Web pages</strong>, such as a list of URIs for which the claim is made, including whether subdomains are included in the claim.</p>
-                            <p class="note">The Web pages may be described by list or by an expression that describes all of the URIs included in the claim.</p>
-                            <p class="note">Web-based products that do not have a URI prior to installation on the customer's Web site may have a statement that the product would conform when installed.</p>
+                        <li><strong>Datum</strong> van de aanspraak/li>
+                        <li><strong><strong>Titel, versie en URI </strong> van de richtlijnen "Web Content Accessibility Guidelines 2.1 a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>" 
+                            <span class="ednote">In WCAG 2.0 was dit een gedateerde URI. Deze moet mogelijk worden aangepast wanneer dit een Rec. wordt.
+                        </span>
                         </li>
-                        <li>A list of the <strong>
-                                <a>Web content technologies</a>
-                                <a>relied upon</a></strong>.</li>
+                        <li><strong>Conformiteitsniveau </strong> waaraan voldaan is: (Niveau A, AA of AAA)</li>
+                        <li>
+                            <p>
+                                <strong> Een beknopte beschrijving van de webpagina's</strong>, zoals een lijst van URI's waarvoor de aanspraak is gemaakt, inclusief de informatie of deelgebieden zijn inbegrepen in de aanspraak.
+                            </p>
+
+                            <p class="note">De webpagina's kunnen beschreven worden door een lijst of door een expressie die alle in de aanspraak inbegrepen URI's beschrijft.
+
+
+                            </p>
+                            <p class="note">Webgerelateerde producten die geen URI hebben vóór installatie op de website van de klant kunnen een verklaring hebben dat het product zou conformeren, indien geïnstalleerd.
+
+
+                            </p>
+                        </li>
+                        <li>Een lijst van de <strong>
+                                <a>webcontenttechnologieën</a>
+                                <a>waarop wordt gesteund</a></strong>.</li>
+                                 
                     </ol>
-                    <p class="note">If a conformance logo is used, it would constitute a claim and must be accompanied by the required components of a conformance claim listed above.</p>
+                    <p class="note">Als een conformiteitslogo wordt gebruikt, zou het een aanspraak in werking doen treden en moet het samengaan met de eerder genoemde componenten van een aanspraak op conformiteit.
+                    </p>
                 </section>
 
                 <section id="conformance-optional">
-                    <h3>Optional Components of a Conformance Claim </h3>
-                    <p>In addition to the required components of a conformance claim above, consider providing additional information to assist users. Recommended additional information includes:</p>
+                    <h3>Optionele componenten van een aanspraak op conformiteit</h3>
+                    <p>Overweeg, behalve de eerder genoemde vereiste componenten van een aanspraak op conformiteit, het aanbieden van extra informatie om gebruikers te assisteren. Aanbevolen extra informatie omvat:
+                    </p>
                     <ul>
-                        <li>A list of success criteria beyond the level of conformance claimed that have been met. This information should be provided in a form that users can use, preferably machine-readable metadata.</li>
-                        <li>A list of the specific technologies that are " <em>used but not <a>relied upon</a></em>."</li>
-                        <li>A list of user agents, including assistive technologies that were used to test the content.</li>
-                        <li class="new">A list of specific accessibility characteristics of the content, provided in machine-readable metadata.</li>
-                        <li>Information about any additional steps taken that go beyond the success criteria to enhance accessibility.</li>
-                        <li>A machine-readable metadata version of the list of specific technologies that are <a>relied upon</a>.</li>
-                        <li>A machine-readable metadata version of the conformance claim.</li>
+                        <li>Een lijst van succescriteria boven het niveau van aanspraak op conformiteit waaraan voldaan is. Deze informatie zou aangeboden moeten worden in een vorm die bruikbaar is voor gebruikers, bij voorkeur machine-leesbare metadata.
+                        </li>
+                        <li>Een lijst van de specifieke technologieën die "<em>gebruikt worden, maar waarop niet <a>gesteund wordt</a></em>."</li>
+                        
+
+                        <li>Een lijst van user agents, met inbegrip van hulptechnologieën die gebruikt zijn om de content te testen.
+                        </li>
+                        <li class="new">Een lijst van specifieke toegankelijkheidskenmerken van de content, in machine-leesbare metadata.
+                        </li>
+                        <li>Informatie betreffende extra stappen die zijn genomen om verder dan de succescriteria te gaan om toegankelijkheid te verbeteren.
+                        </li>
+                        <li>Een machine-leesbare metadataversie van de lijst van specifieke technologieën waarop <a>gesteund wordt</a>.
+                        </li>
+                        <li>Een machine-leesbare metadataversie van de lijst van de aanspraak op conformiteit.</li>
                     </ul>
-                    <p class="note">Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Claims</a> for more information and example conformance claims.</p>
-                    <p class="note">Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/appendixC">Understanding Metadata</a> for more information about the use of metadata in conformance claims.</p>
+                    <p class="note">We verwijzen naar <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Claims</a> voor meer informatie en voorbeeldaanspraken op conformiteit.</p>
+                    
+
+                    <p class="note">We verwijzen naar <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/appendixC">Understanding Metadata</a> voor meer informatie over het gebruik van metadata in aanspraken op conformiteit.</p>
+                    
+
                 </section>
             </section>
 
             <section id="conformance-partial">
-                <h2>Statement of Partial Conformance - Third Party Content</h2>
-                <p>Sometimes, Web pages are created that will later have additional content added to them. For example, an email program, a blog, an article that allows users to add comments, or applications supporting user-contributed content. Another example would be a page, such as a portal or news site, composed of content aggregated from multiple contributors, or sites that automatically insert content from other sources over time, such as when advertisements are inserted dynamically.</p>
-                <p>In these cases, it is not possible to know at the time of original posting what the uncontrolled content of the pages will be. It is important to note that the uncontrolled content can affect the accessibility of the controlled content as well. Two options are available:</p>
+                <h2>Verklaring van partiële conformiteit – Content van derden</h2>
+                <p>Soms worden webpagina's gecreëerd waaraan later aanvullende content wordt toegevoegd. Bijvoorbeeld een e-mailprogramma, een blog, een artikel dat gebruikers toestaat commentaar toe te voegen of applicaties die door de gebruiker bijgedragen content ondersteunen. Nog een voorbeeld zou een pagina zijn, zoals een portal of een nieuwssite, die is samengesteld uit content die wordt samengesteld vanuit meerdere leveranciers, of websites die automatisch in de loop van tijd content uit andere bronnen invoegen, zoals wanneer advertenties dynamisch worden ingevoegd.
+                </p>
+                <p>In deze gevallen is het niet mogelijk om op het tijdstip van de oorspronkelijke bijdrage te weten wat de niet-gecontroleerde content van de pagina's zal zijn. Het is belangrijk op te merken dat de niet-gecontroleerde content ook de toegankelijkheid van de gereguleerde content kan beïnvloeden. Twee opties zijn beschikbaar:
+                </p>
                 <ol>
                     <li>
-                        <p>A determination of conformance can be made based on best knowledge. If a page of this type is monitored and repaired (non-conforming content is removed or brought into conformance) within two business days, then a determination or claim of conformance can be made since, except for errors in externally contributed content which are corrected or removed when encountered, the page conforms. No conformance claim can be made if it is not possible to monitor or correct non-conforming content;</p>
-                        <p><strong>OR</strong></p>
+                        <p>Conformiteit kan worden vastgesteld naar beste weten. Als een pagina van dit type binnen twee werkdagen wordt gemonitord en gerepareerd (niet-conforme content wordt verwijderd of conform gemaakt), dan kan een besluit tot of aanspraak op conformiteit worden gemaakt aangezien de pagina conformeert, op fouten in extern bijgedragen content na, die verwijderd of verbeterd worden als ze worden aangetroffen. Geen aanspraak op conformiteit kan worden gemaakt als het niet mogelijk is om niet-conforme content te monitoren of te verbeteren;
+                        </p>
+                        <p><strong>OF</strong></p>
                     </li>
                     <li>
-                        <p>A "statement of partial conformance" may be made that the page does not conform, but could conform if certain parts were removed. The form of that statement would be, "This page does not conform, but would conform to WCAG 2.1 at level X if the following parts from uncontrolled sources were removed." In addition, the following would also be true of uncontrolled content that is described in the statement of partial conformance:</p>
+                        <p>Een "verklaring van partiële conformiteit" kan worden gemaakt: de pagina conformeert niet maar zou kunnen conformeren als zekere onderdelen verwijderd zouden worden. De formulering van de verklaring zou zijn: "Deze pagina conformeert niet maar zou aan WCAG 2.1 conformeren op niveau X als de volgende onderdelen afkomstig uit niet gecontroleerde bronnen verwijderd werden." Verder zou het volgende ook waar zijn van niet-gecontroleerde content die beschreven wordt in de verklaring van partiële conformiteit:
+                        </p>
                         <ol>
-                            <li>It is not content that is under the author's control.</li>
-                            <li>It is described in a way that users can identify (e.g., they cannot be described as "all parts that we do not control" unless they are clearly marked as such.)</li>
+                            <li>Het is geen content waar de auteur zeggenschap over heeft.</li>
+                            <li>Ze wordt beschreven op een manier die gebruikers kunnen identificeren (ze kunnen bijvoorbeeld niet beschreven worden als "alle onderdelen waar wij geen zeggenschap over hebben" tenzij ze duidelijk als zodanig zijn gemarkeerd).
+                            </li>
                         </ol>
                     </li>
                 </ol>
             </section>
 
             <section id="conformance-partial-lang">
-                <h2>Statement of Partial Conformance - Language</h2>
-                <p>A "statement of partial conformance due to language" may be made when the page does not conform, but would conform if <a>accessibility support</a> existed for (all of) the language(s) used on the page. The form of that statement would be, "This page does not conform, but would conform to WCAG 2.1 at level X if accessibility support existed for the following language(s):"</p>
+                <h2>Verklaring van partiële conformiteit – Taal</h2>
+                <p>Een "Verklaring van partiële conformiteit vanwege taal" kan worden afgegeven als de pagina niet conformeert maar zou conformeren als <a>toegankelijkheidsondersteuning</a> bestond voor de taal (elk van de talen) die op de pagina gebruikt worden. De formulering van die verklaring zou zijn: "Deze pagina conformeert niet maar zou aan WCAG 2.1 conformeren op niveau X als toegankelijkheidsondersteuning bestond voor de volgende taal (talen):"
+                </p>
             </section>
+
+            
 
         </section>
         <section id="glossary">
-            <h1>Glossary</h1>
+            <h1>Verklarende woordenlijst</h1>
             <dl id="terms">
 
                 <dt data-include="terms/20/abbreviation.html" data-include-replace="true"></dt>
