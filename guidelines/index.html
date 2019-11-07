@@ -468,34 +468,51 @@
         </section>
         <section>
             <h1>Conformiteit</h1>
-            <p>This section lists requirements for <a>conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility-supported ways of using technologies can be <a>relied upon</a> for conformance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
+            <p>Deze paragraaf geeft een lijst van eisen voor <a>conformiteit</a> aan WCAG 2.1. Ze geeft ook informatie over hoe men aanspraken op conformiteit kan maken. Aanspraken op conformiteit zijn optioneel. 
+            Ten slotte beschrijft deze paragraaf wat het betekent om door <a>toegankelijkheid ondersteund</a> te zijn, aangezien voor conformiteit alleen <a>gesteund kan worden op</a> het gebruik van technologieën voor toegankelijkheid ondersteunde manieren.
+            <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> geeft verdere uitleg van het begrip door toegankelijkheid ondersteund.
+            </p>
+
+            
+
         	
         	<section>
-        		<h2>Interpreting Normative Requirements</h2>
+        		<h2>Normatieve eisen interpreteren</h2>
         		
-        		<p>The main content of WCAG 2.1 is <a>normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
-        		<p>The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [[RFC2119]].</p>
+                <p>De belangrijkste inhoud van WCAG 2.1 is <a>normatief</a> en definieert de eisen die gevolgen hebben voor aanspraken op conformiteit. Inleidend materiaal, bijlagen, paragrafen die zijn gemarkeerd als "niet-normatief", schema's, voorbeelden en opmerkingen zijn <a>informatief</a> (niet-normatief). Niet-normatief materiaal geeft advies en informatie over het interpreteren van de richtlijnen, maar schrijft geen eisen voor die gevolgen hebben voor een aanspraak op conformiteit.
+                </p>
+                
+        		<p>De belangrijke woorden MOGEN, MOETEN, MOETEN NIET, NIET AANBEVOLEN, AANBEVOLEN, ZOUDEN MOETEN en ZOUDEN NIET MOETEN, moeten worden geïnterpreteerd zoals beschreven in [RFC2119].
+                </p>
         	</section>
 
             <section id="conformance-reqs">
-                <h2>Conformance Requirements</h2>
-                <p>In order for a Web page to conform to WCAG 2.1, all of the following conformance requirements must be satisfied:</p>
+                <h2>Conformiteitseisen</h2>
+                <p>Een webpagina is conform WCAG 2.1 als deze aan alle volgende conformiteitseisen voldoet:
+                </p>
 
                 <section id="cc1">
-                    <h3>Conformance Level</h3>
-                    <p>One of the following levels of conformance is met in full.</p>
+                    <h3>Conformiteitsniveau</h3>
+                    <p>Aan een van de volgende conformiteitsniveaus wordt volledig voldaan:</p>
                     <ul>
-                        <li>For Level A conformance (the minimum level of conformance), the <a>Web page</a>
-                            <a>satisfies</a> all the Level A Success Criteria, or a <a>conforming alternate version</a> is provided.</li>
-                        <li>For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
-                        <li>For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
+                        <li>Voor conformiteit van Niveau A (het minimumniveau van conformiteit) <a>voldoet</a> de <a>webpagina</a> aan alle succescriteria van Niveau A , of er is een <a>conforme alternatieve</a> versie beschikbaar.
+                        </li>
+                        
+
+                        <li>Voor conformiteit van Niveau AA voldoet de webpagina aan alle succescriteria van Niveau A en Niveau AA of er is een conforme alternatieve versie van Niveau AA beschikbaar.
+                        </li>
+
+                        <li>Voor conformiteit van Niveau AAA voldoet de webpagina aan alle succescriteria van Niveau A, Niveau AA en Niveau AAA of er is een conforme alternatieve versie van Niveau AAA beschikbaar.
+                        </li>
                     </ul>
-                    <p class="note">Although conformance can only be achieved at the stated levels, authors are encouraged to report (in their claim) any progress toward meeting success criteria from all levels beyond the achieved level of conformance.</p>
-                    <p class="note">It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content.</p>
+                    <p class="note">Hoewel conformiteit alleen op de vermelde niveaus kan worden bereikt, worden auteurs aangemoedigd om (in hun aanspraak) te rapporteren welke vooruitgang ze boeken bij het voldoen aan succescriteria van alle niveaus hoger dan het bereikte niveau van conformiteit.
+                    </p>
+                    <p class="note">Het is niet aan te bevelen om beleidsmatig conformiteit op Niveau AAA te eisen voor hele sites, omdat het voor sommige content niet mogelijk is om aan alle succescriteria van Niveau AAA te voldoen.
+                    </p>
                 </section>
 
                 <section id="cc2">
-                    <h3>Full pages</h3>
+                    <h3>Volledige pagina's</h3>
                     <p><a>Conformance</a> (and conformance level) is for full <a>Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.</p>
                     <p class="note">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.</p>
                     <p class="note">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p>
