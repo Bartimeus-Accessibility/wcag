@@ -11,7 +11,7 @@ function linkUnderstanding() {
     var pathFrag = titleToPathFrag(node.id);
     var el = document.createElement('div');
     el.setAttribute('class', 'doclinks');
-    el.innerHTML = '<a href="' + understandingBaseURI + pathFrag + '.html">' + heading + ' begrijpen</a> <span class="screenreader">|</span> <br /><a href="https://www.w3.org/WAI/WCAG21/quickref/#' + pathFrag + '">Hoe te voldoen aan ' + heading + '</a>';
+    el.innerHTML = '<a href="' + understandingBaseURI + (pathFrag || 'index') + '.html">' + heading + ' begrijpen</a> <span class="screenreader">|</span> <br /><a href="https://www.w3.org/WAI/WCAG21/quickref/#' + pathFrag + '">Hoe te voldoen aan ' + heading + '</a>';
     node.insertBefore(el, node.children[1]);
   });
 }
